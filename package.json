@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "node --watch index"
   },
-  "keywords": ["endpoints", "middleware"],
+  "keywords": [
+    "endpoints",
+    "middleware"
+  ],
   "author": "Holmquist Ignacio",
   "license": "ISC",
   "devEngines": {
@@ -16,5 +20,8 @@
       "onFail": "download"
     }
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
